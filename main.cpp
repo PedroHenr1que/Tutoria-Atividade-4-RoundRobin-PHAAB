@@ -23,12 +23,9 @@ int main() {
         float sumTurnAroundTime = 0, sumWaitTime = 0, sumResponseTime = 0;
         process_struct process[100];
 
-        cout << "Enter total number of processes and quantum: ";
         cin >> processQuantity >> timeQuantum;
 
-        for (int i = 0; i < processQuantity; i++)
-        {
-                cout << "\nEnter Process " << i + 1 << " Arrival Time and burst time: ";
+        for (int i = 0; i < processQuantity; i++) {
                 cin >> process[i].arrivalTime >> process[i].burstTime;
                 process[i].burstTimeRemaning = process[i].burstTime;
         }
@@ -36,8 +33,7 @@ int main() {
         processQueue.push(0);
         visited[0] = true;
 
-        while (completed != processQuantity)
-        {
+        while (completed != processQuantity) {
                 index = processQueue.front();
                 processQueue.pop();
 
