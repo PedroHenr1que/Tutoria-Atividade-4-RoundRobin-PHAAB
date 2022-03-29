@@ -6,8 +6,8 @@
 ## Clone Project
 
 ```bash
-$ git clone 
-$ cd Tutoria-Atividade-3-Thread-PHAAB
+$ git clone https://github.com/PedroHenr1que/Tutoria-Atividade-4-RoundRobin-PHAAB.git
+$ cd Tutoria-Atividade-4-RoundRobin-PHAAB
 ```
 ## Compile all files
 
